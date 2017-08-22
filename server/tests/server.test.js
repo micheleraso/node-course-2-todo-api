@@ -171,7 +171,7 @@ describe('POST /todos', () => {
                 .patch(`/todos/${hexId}`)
                 .send({
                     completed: false,
-                    text: text
+                    text
                 })
                 .expect(200)
                 .expect((res) => {
